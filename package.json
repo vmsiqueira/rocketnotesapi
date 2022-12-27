@@ -4,7 +4,7 @@
   "description": "API desenvolvida no stage 8 do Explorer da Rocketseat",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "pm2-runtime start ecosystem.config.js --env production",
     "dev": "nodemon ./src/server.js",
     "migrate": "knex migrate:latest"
@@ -26,6 +26,7 @@
     "sqlite3": "^5.0.11"
   },
   "devDependencies": {
+    "jest": "^29.3.1",
     "nodemon": "^2.0.19"
   }
 }
